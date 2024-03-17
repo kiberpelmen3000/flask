@@ -1,0 +1,13 @@
+<!-- login.html -->
+{% extends 'landing.html' %}
+
+{% block content %}
+    <h2>Форма входа</h2>
+    <form method="POST" action="{{ url_for('login') }}">
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Войти">
+    </form>
+{% endblock %}
